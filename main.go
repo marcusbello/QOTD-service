@@ -3,14 +3,13 @@ package main
 import (
 	"context"
 	"fmt"
-	"math/rand"
 	"sync"
 	"time"
 )
 
 func main() {
 	// Sets us some randomization between runs.
-	rand.Seed(time.Now().UnixNano())
+	// rand.Seed(time.Now().UnixNano())
 
 	// Create a new server listening on port 80. This will listen on all available IP addresses.
 	serv, err := newServer(80)

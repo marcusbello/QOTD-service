@@ -222,7 +222,7 @@ func (s *server) qotdGet(w http.ResponseWriter, r *http.Request) {
 	// If no deadline is set, set one.
 	if _, ok := ctx.Deadline(); !ok {
 		var cancel context.CancelFunc
-		ctx, cancel = context.WithTimeout(ctx, 2*time.Second)
+		_, cancel = context.WithTimeout(ctx, 2*time.Second)
 		defer cancel()
 	}
 
@@ -278,5 +278,5 @@ func (s *server) qotdGet(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Write(b)
-	return
+
 }
