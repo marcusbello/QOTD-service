@@ -15,7 +15,7 @@ Qoute of the day service built with Go
 
 ```
 start server
-`go run qotd.go --addr="127.0.0.1:3000"`
+```go run qotd.go --addr="127.0.0.1:3000"```
 # if `addr` is left blank, it will default to `127.0.0.1:80`
 ```
 
