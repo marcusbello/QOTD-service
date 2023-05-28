@@ -11,6 +11,36 @@ Qoute of the day service built with Go
 4. buf
 
 
+### Project Diretory
+```
+$ tree
+.
+|-- LICENSE
+|-- client   
+|   |-- bin  
+|   |   `-- qotd.go 
+|   `-- client.go   
+|-- go.mod
+|-- go.sum
+|-- internal        
+|   `-- server      
+|       `-- server.go   
+|-- makefile
+|-- proto
+|   `-- qotd
+|       |-- buf.gen.yaml
+|       |-- buf.yaml       
+|       |-- qotd.pb.go     
+|       |-- qotd.proto     
+|       `-- qotd_grpc.pb.go
+|-- qotd.go  
+|-- qotd.png 
+`-- qotd_rest
+    `-- main.go
+
+7 directories, 16 files
+```
+
 ### Build & Run
 
 ```
